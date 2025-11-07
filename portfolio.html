@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 25px #e94560;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 20px #e94560; }
+  50% { box-shadow: 0 0 40px #e94560; }
+}
+header h1 {
+  font-size: 2.8em;
+  margin-top: 20px;
+}
+header p {
+  color: #dcdcdc;
+  font-size: 1.2em;
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+}
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #e94560;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e94560;
+  border-bottom: 2px solid #e94560;
+  display: inline-block;
+}
+p, li {
+  color: #e0e0e0;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+ul { list-style: none; }
+li::before {
+  content: "⭐ ";
+  color: #e94560;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #e94560, #ff758c);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff758c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+  font-size: 0.9em;
+  background: rgba(255,255,255,0.05);
+  border-top: 1px solid #333;
+}
+
+/* Animations on Scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:768px) {
+  h1 { font-size: 2em; }
+  section { margin: 30px 15px; padding: 25px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t39.30808-6/506052930_1230851642066179_5833607327284787774_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeExRD1PfU5iKuUXEVLUkq9L1Vum4jFJFLfVW6biMUkUtze1sfJg20X5IketG8OhEqAMj2zoQwcyE2N0H3G6c6B6&_nc_ohc=7kx_QYh3alQQ7kNvwHAzuBS&_nc_oc=Adnp_b_8X_Qfpl7-KEi1_Ul5nFNmFG44gipQ30mL0GHuuLWdLM58Fonj6REjGIfJPXQ&_nc_zt=23&_nc_ht=scontent.fdac24-5.fna&_nc_gid=Fm-TSYYdIJT90-kOldv7Qw&oh=00_AfiseJ-b2Yk99PwwG7hskRojgzDF_Wpc_iTJCTr-gc7MWA&oe=6913F1D0" alt="Your Photo">
+  <h1>Dr.Maisha Muhsanat</h1>
+  <p>Virologist | Scientist | Dreamer </p>
+</header>
+
+<section class="fade-in">
+  <h2>About Me</h2>
+  <p>Hello! I’m <strong>[Dr Maisha Muhsanat]</strong>, a passionate scientist specializing in <strong>Virology</strong>. 
+    I’ve always been deeply fascinated by the microscopic world and the complex interactions between viruses and their hosts.
+  </p>
+  <p>
+    I completed my <strong>Ph.D. in Virology</strong> in the United States, where my research focused on understanding viral pathogenesis and developing novel antiviral strategies. 
+    Before that, I earned my <strong>Master’s degree from Oxford University</strong>, where I began my journey into molecular biology and viral genetics.
+  </p>
+  
+</section>
+
+<section class="fade-in">
+  <h2>Skills</h2>
+  <ul>
+    <li>Communication Skill</li>
+    <li>Virus cultivation & quantification </li>
+    <li>Gene cloning & sequencing</li>
+    <li>CRISPR/Cas9 and gene editing</li>
+    <li>Data analysis & visualization</li>
+    <li>Scientific writing & publishing</li>
+  </ul>
+</section>
+
+<section class="fade-in">
+  <h2>Education</h2>
+  <p><strong>Bachelor of Microbiology</strong><br>BRAC University, 2023–2027</p>
+  <p><strong>Master of Science in Virology</strong><br>Oxford University, 2027–2029</p>
+  <p><strong>Ph.D. in Virology</strong><br>Harvard University, 2029–2034</p>
+</section>
+
+<section class="fade-in">
+  <h2>Thesis</h2>
+  <ul>
+    <li><a href="#" class="button">🌐 Portfolio Website</a></li>
+    <li><a href="#" class="button">Evaluation of Bdellovibrio bacteriovorus Against Multidrug-Resistant E. coli</a></li>
+   
+  </ul>
+</section>
+
+<section class="fade-in">
+  <h2>Contact</h2>
+  <p>Email: <a href="muhsanatmaisha101@gmail.com" style="color:#ff758c;">muhsanatmaisha101@gmail.com</a></p>
+  <p>LinkedIn: <a href="#" style="color:#ff758c;">https://www.linkedin.com/in/maisha-muhsanat-885952278</a></p>
+  <a href="file:///F:/Downloads/Maisha%20Muhsanat_Resume.pdf" class="button">Download CV 📄</a>
+</section>
+
+<footer>
+  <p>© 2025 Maisha | Made by My ❤️</p>
+</footer>
+
+<script>
+// Fade-in Animation on Scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  fadeEls.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) el.classList.add('visible');
+  });
+});
+</script>
+</body>
+</html>
